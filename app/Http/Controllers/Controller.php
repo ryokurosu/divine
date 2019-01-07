@@ -22,7 +22,7 @@ class Controller extends BaseController
 				try{
 					Session::put('lang',$request->lang);
 				}catch(\Exception $e){
-					Session::put('lang','en');
+					Session::put('lang','ja');
 				}
 			}
 			return $next($request);
@@ -31,11 +31,11 @@ class Controller extends BaseController
 		if(Session::has('lang')){
 			// had session
 		}else{
-			Session::put('lang','en');
+			Session::put('lang','ja');
 		}
 	}
 	public function viewer($view,$content = []){
-		$view = Session::get('lang','en') . '.' . $view;
+		$view = Session::get('lang','ja') . '.' . $view;
 		return view($view,$content);
 	}
 }

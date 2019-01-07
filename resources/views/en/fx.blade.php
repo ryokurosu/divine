@@ -14,54 +14,15 @@
       <div class="panel panel-default">
        <div class="panel-heading">FX</div>
 
-       <a href="{{route('tiger')}}">
-         <div id="tiger" class="fx-card">
-          <div class="fx-icon"></div>
-          <h2>Tiger</h2>
-<!--           <p>sample sample sample sample sample sample sample sample sample sample</p>
- -->        </div>
+       @foreach($systems as $system)
+       <a href="{{route('system.detail',$system->name)}}">
+         <div id="{{$system->name}}" class="fx-card" style="border-color:{{$system->colorcode}}">
+          <h2>{{$system->lname}}</h2>
+          <div class="fx-icon" style="background-image:url(/image/{{$system->name}}.png);background-size: 75%;background-position: center center;background-repeat: no-repeat;"></div>
+        </div>
       </a>
+      @endforeach
 
-      <a href="{{route('elephant')}}">
-        <div id="elephant" class="fx-card">
-          <div class="fx-icon"></div>
-          <h2>Elephant</h2>
-<!--           <p>sample sample sample sample sample sample sample sample sample sample</p>
- -->        </div>
-      </a>
-
-      <a href="{{route('turtle')}}">
-        <div id="turtle" class="fx-card">
-          <div class="fx-icon"></div>
-          <h2>Turtle</h2>
-<!--           <p>sample sample sample sample sample sample sample sample sample sample</p>
- -->        </div>
-      </a>
-
-      <a href="{{route('shark')}}">
-        <div id="shark" class="fx-card">
-          <div class="fx-icon"></div>
-          <h2>Shark</h2>
-<!--           <p>sample sample sample sample sample sample sample sample sample sample</p>
- -->        </div>
-      </a>
-
-      <a href="{{route('cobra')}}">
-        <div id="cobra" class="fx-card">
-          <div class="fx-icon"></div>
-          <h2>Cobra</h2>
-<!--           <p>sample sample sample sample sample sample sample sample sample sample</p>
- -->        </div>
-      </a>
-
-      <a href="{{route('eagle')}}">
-        <div id="eagle" class="fx-card">
-          <div class="fx-icon"></div>
-          <h2>Eagle</h2>
-<!--           <p>sample sample sample sample sample sample sample sample sample sample</p>
- -->        </div>
-      </a>
-      
     </div>
   </div>
 </div>

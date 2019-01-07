@@ -19,17 +19,20 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </style>
 </head>
-<body>
-    <div class="top-container">
-        <div class="content">
+<body id="top">
+    <!-- <div class="top-container"> -->
+        <!-- <div class="content"> -->
             <div class="title m-b-md">
-                <img src="/image/Savannah-FX.gif" alt="Savannah-FX">
+                <img src="{{url('image/logo_large.png')}}">
             </div>
 
-            <a class="sign-in" href="{{route('login')}}">ログイン</a>
-            <a class="create-account" href="{{route('register')}}">新規登録</a>
+            <a class="sign-in" href="{{route('login')}}">LOGIN</a>
+            <a class="create-account" href="{{route('register')}}">REGISTER</a>
 
-        </div>
-    </div>
+        <!-- </div> -->
+    <!-- </div> -->
+    <div id="back-particle"></div>
+    <script src="{{url('js/particles.min.js')}}"></script>
+    <script src="{{url('js/s_fx_divine.js')}}"></script>
 </body>
 </html>

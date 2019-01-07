@@ -8,29 +8,17 @@
        <div class="panel-heading">News</div>
        <div class="panel-body">
         <div class="news-column">
-          <small>2018/09/02</small>
-          <h2>tigerが更新されました。</h2>
-        </div>
-        <div class="news-column">
-          <small>2018/03/16</small>
-          <h2>turtleが更新されました。</h2>
-        </div>
-        <div class="news-column">
-          <small>2018/03/16</small>
-          <h2>sharkが更新されました。</h2>
-        </div>
-        <!-- <div class="news-column">
-          <small>2018/03/16</small>
-          <h2>eagleが更新されました。</h2>
-        </div>
-        <div class="news-column">
-          <small>2017/10/23</small>
-          <h2>cobraが更新されました。</h2>
-        </div>
-        <div class="news-column">
-          <small>2017/07/09</small>
-          <h2>elephantが更新されました。</h2>
-        </div> -->
+        <small>2018/09/02</small>
+        <h2>Zeusが更新されました。</h2>
+      </div>
+      <div class="news-column">
+        <small>2018/03/16</small>
+        <h2>Poseidonが更新されました。</h2>
+      </div>
+      <div class="news-column">
+        <small>2018/03/16</small>
+        <h2>Athenaが更新されました。</h2>
+      </div>
       </div>
     </div>
   </div>
