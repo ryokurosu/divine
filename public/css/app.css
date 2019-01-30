@@ -399,7 +399,7 @@ h1#coming-soon-title:before {
     left: 0;
     right: 10px;
     height: 2px;
-    background: white;
+    background: black;
 }
 h1#coming-soon-title:after {
     content: '';
@@ -408,7 +408,7 @@ h1#coming-soon-title:after {
     left: 25px;
     right: -90px;
     height: 2px;
-    background: white;
+    background: black;
 }
 
 
@@ -477,4 +477,8 @@ a.create-account:hover {
 .content {
     position: relative;
     z-index: 0;
+}
+.fx-card p {
+    font-size: 18px;
+    text-align: center;
 }

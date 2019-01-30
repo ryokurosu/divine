@@ -47,10 +47,15 @@ class HomeController extends Controller
         return $this->viewer('news');
     }
     public function systemdetail($name){
+        $comingsoon = ["ares","hermes"];
         /*
         if system detail or coming soon
          */
         $system = System::where('name',$name)->firstOrFail();
+        if(in_array($name, $comingsoon)){
+            return $this->viewer('system.comingsoon',['system' => $system]);
+        }
+
         return $this->viewer('system.detail',['system' => $system]);
     }
     public function systemOpenAccount($name){
