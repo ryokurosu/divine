@@ -7,6 +7,8 @@ use App\User;
 use App\Affiliater;
 use App\System;
 use Illuminate\Support\Facades\Auth;
+use App\Mail\OpenMail;
+use Mail;
 
 class HomeController extends Controller
 {
@@ -47,7 +49,7 @@ class HomeController extends Controller
         return $this->viewer('news');
     }
     public function systemdetail($name){
-        $comingsoon = ["ares","hermes"];
+        $comingsoon = ["ares","hermes","athena"];
         /*
         if system detail or coming soon
          */
@@ -61,6 +63,9 @@ class HomeController extends Controller
     public function systemOpenAccount($name){
         $user = Auth::user();
         $systemid = System::where('name',$name)->firstOrFail()->id;
+        if(!$user->systems()->where('system_id', $systemid)->exists()){
+            Mail::to($user->email)->send(new OpenMail($user));
+        }
         $user->systems()->sync([$systemid], false);
         return $this->viewer('system.open');
     }
