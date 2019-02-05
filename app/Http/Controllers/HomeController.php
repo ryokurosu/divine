@@ -49,7 +49,7 @@ class HomeController extends Controller
         return $this->viewer('news');
     }
     public function systemdetail($name){
-        $comingsoon = ["ares","hermes","athena"];
+        $comingsoon = ["ares","hermes"];
         /*
         if system detail or coming soon
          */
