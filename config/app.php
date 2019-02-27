@@ -107,6 +107,8 @@ return [
 
     'cipher' => 'AES-256-CBC',
 
+    'manager_mail' => env('MANAGER_MAIL'),
+
     /*
     |--------------------------------------------------------------------------
     | Logging Configuration

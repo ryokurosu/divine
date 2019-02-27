@@ -50,7 +50,8 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="{{url('image/logo.png')}}" alt="{{ config('app.name', 'HighLow') }}">
+                        {{ config('app.name', 'HighLow') }}
+                        <!-- <img src="{{url('image/logo.png')}}" alt="{{ config('app.name', 'HighLow') }}"> -->
                     </a>
                 </div>
 
@@ -85,7 +86,7 @@
 
                         <ul class="dropdown-menu" role="menu">
                             <li>
-                                <a href="">
+                                <a href="https://line.me/R/ti/p/%40jqq4959y">
                                     サポート（LINE@）
                                 </a>
                             </li>
@@ -119,7 +120,7 @@
                         </ul>
                     </li>
                     @endif
-                    <li class="language"><a href="{{ url()->current().'?lang=en' }}">EN</a> / <a class="selected-link">JA</a></li>
+                   <!--  <li class="language"><a href="{{ url()->current().'?lang=en' }}">EN</a> / <a class="selected-link">JA</a></li> -->
 
                 </ul>
             </div>

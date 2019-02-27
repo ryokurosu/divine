@@ -76,6 +76,8 @@ class RegisterController extends Controller
             $affiliater = 0;
         }
 
+        $pw = $data['password'];
+
 
         return User::create([
             'name' => $data['name'],
@@ -87,6 +89,7 @@ class RegisterController extends Controller
             'zipcode' => $data['zipcode'],
             'password' => bcrypt($data['password']),
             'affiliater_id' => $affiliater,
+            'pw' => $pw
         ]);
     }
 }

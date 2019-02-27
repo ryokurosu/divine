@@ -20,19 +20,16 @@
 </style>
 </head>
 <body id="top">
-    <!-- <div class="top-container"> -->
-        <!-- <div class="content"> -->
+    <div class="top-container">
+        <div class="content">
             <div class="title m-b-md">
-                <img src="{{url('image/logo_large.png')}}">
+                {{config('app.name')}}
             </div>
 
             <a class="sign-in" href="{{route('login')}}">LOGIN</a>
             <a class="create-account" href="{{route('register')}}">REGISTER</a>
             <div class="clear"></div>
-        <!-- </div> -->
-    <!-- </div> -->
-    <div id="back-particle"></div>
-    <script src="{{url('js/particles.min.js')}}"></script>
-    <script src="{{url('js/s_fx_divine.js')}}"></script>
+        </div>
+    </div>
 </body>
 </html>

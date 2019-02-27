@@ -183,6 +183,16 @@ class AdminController extends Controller
       return $this->viewer('affiliater_add');
     }
 
+    public function affiliaterDelete($id){
+      $af = Affiliater::findOrFail($id);
+      $users = User::where('affiliater_id',$af->id)->get();
+      foreach($users as $u){
+        $u->fill(['affiliater_id' => 0])->save();
+      }
+      $af->delete();
+      return back();
+    }
+
     public function affiliaterPost(Request $request){
       Affiliater::create(['name' => $request->name,'code' => $this->makeRandStr(8)])->save();
       return redirect()->route('affiliater');

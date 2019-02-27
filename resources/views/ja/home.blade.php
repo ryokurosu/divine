@@ -24,18 +24,9 @@
        <div class="panel-heading">News</div>
        <div class="panel-body">
         <div class="news-column">
-          <small>2018/09/02</small>
-          <h2>Zeusが更新されました。</h2>
+          <small>2019/02/15</small>
+          <h2>Leaping FX が更新されました。</h2>
         </div>
-        <div class="news-column">
-          <small>2018/03/16</small>
-          <h2>Poseidonが更新されました。</h2>
-        </div>
-        <div class="news-column">
-          <small>2018/03/16</small>
-          <h2>Athenaが更新されました。</h2>
-        </div>
-        <a class="btn btn-primary" href="{{route('news')}}">Read More</a>
       </div>
     </div>
   </div>

@@ -18,6 +18,7 @@ Route::post('/admin/user/edit/{id}','AdminController@userpost');
 Route::get('/admin/user/edit/{id}/accountdefault','AdminController@userAccountDefault');
 Route::get('/affiliater','AdminController@affiliater')->name('affiliater');
 Route::get('/affiliater/add','AdminController@affiliaterAdd')->name('affiliater.add');
+Route::get('/affiliater/delete/{id}','AdminController@affiliaterDelete')->name('affiliater.delete');
 Route::post('/affiliater/add','AdminController@affiliaterPost');
 Route::post('/admin','AdminController@submit');
 Route::get('/fx', 'HomeController@fx')->name('fx');

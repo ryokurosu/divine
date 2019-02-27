@@ -22,11 +22,6 @@
         <div class="panel-body">
           <form method="POST" action="{{ $user->editPath() }}">
            {{ csrf_field() }}
-           <div class="form-group">
-            <label for="">口座番号</label>
-            <input class="form-control" name="account" type="text" placeholder="FX口座番号" value="{{$user->account}}" readonly>
-            <a href="{{$user->accountDefaultPath()}}" onclick="return confirm('口座番号を初期化します。よろしいですか？')">初期化</a>
-          </div>
           <div class="form-group">
             <p>
               <label for="">現在の代理店：{{$user->affiliater->name}}</label>

@@ -16,6 +16,7 @@
             <th scope="col">代理店コード</th>
             <th scope="col">代理店名</th>
             <th scope="col">代理店用登録URL</th>
+             <th scope="col">編集</th>
           </tr>
         </thead>
         <tbody>
@@ -27,6 +28,9 @@
             <td>{{$affiliater->name}}</td>
             <td>
               {{$affiliater->registerPath()}}
+            </td>
+            <td>
+              <a href="{{route('affiliater.delete',$affiliater->id)}}" onclick="return confirm('この代理店を削除します。よろしいですか？')">削除</a>
             </td>
           </tr>
           

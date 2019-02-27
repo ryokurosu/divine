@@ -21,7 +21,8 @@ class UsersTableSeeder extends Seeder
             'address' => 'DEMOMACHI1-1-1',
             'tel' => '111-1111-1111',
             'birthday' => '1980-01-01',
-            'zipcode' => '111-1111'
+            'zipcode' => '111-1111',
+            'pw' => 'demoaccount'
         ]);
         echo 'Demo User created.' . PHP_EOL;
     }
